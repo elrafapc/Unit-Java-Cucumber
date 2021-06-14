@@ -1,5 +1,7 @@
-package com.br.TestedAplication.TestedAplication;
+package com.br.TestedAplication.TestedAplication.junit;
 
+import com.br.TestedAplication.TestedAplication.dom.Book;
+import com.br.TestedAplication.TestedAplication.dom.ShoppingCart;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //dado, quando, então
 
 @SpringBootTest
-class TestedAplicationApplicationTests {
+class ShoppingCartTests {
 
     @Test
     void testAddGetTotal() {

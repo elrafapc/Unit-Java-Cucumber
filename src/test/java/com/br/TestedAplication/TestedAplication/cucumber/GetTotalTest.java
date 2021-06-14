@@ -1,7 +1,7 @@
-package com.br.TestedAplication.TestedAplication.ShoppingCartTests;
+package com.br.TestedAplication.TestedAplication.cucumber;
 
-import com.br.TestedAplication.TestedAplication.Book;
-import com.br.TestedAplication.TestedAplication.ShoppingCart;
+import com.br.TestedAplication.TestedAplication.dom.Book;
+import com.br.TestedAplication.TestedAplication.dom.ShoppingCart;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GetTotalTest {

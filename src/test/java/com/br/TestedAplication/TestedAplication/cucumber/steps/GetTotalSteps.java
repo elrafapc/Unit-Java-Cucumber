@@ -1,5 +1,7 @@
-import com.br.TestedAplication.TestedAplication.Book;
-import com.br.TestedAplication.TestedAplication.ShoppingCart;
+package com.br.TestedAplication.TestedAplication.cucumber.steps;
+
+import com.br.TestedAplication.TestedAplication.dom.Book;
+import com.br.TestedAplication.TestedAplication.dom.ShoppingCart;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

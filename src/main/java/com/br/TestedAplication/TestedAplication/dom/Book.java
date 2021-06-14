@@ -1,4 +1,4 @@
-package com.br.TestedAplication.TestedAplication;
+package com.br.TestedAplication.TestedAplication.dom;
 
 public class Book {
     //titulo, preco, codLivro

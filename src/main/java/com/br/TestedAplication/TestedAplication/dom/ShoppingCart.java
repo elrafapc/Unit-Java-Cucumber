@@ -1,4 +1,4 @@
-package com.br.TestedAplication.TestedAplication;
+package com.br.TestedAplication.TestedAplication.dom;
 
 import java.util.ArrayList;
 
