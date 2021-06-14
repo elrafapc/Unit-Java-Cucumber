@@ -30,4 +30,22 @@ class ShoppingCartTests {
         cart.add(b2);
         assertEquals(30.0, cart.getTotal());
     }
+
+    @Test
+    void testRemoveItem(){
+        cart.add(b1);
+        cart.add(b2);
+        cart.remove(b1);
+        assertEquals(20.0, cart.getTotal());
+    }
+
+    @Test
+    void clearCart(){
+        cart.add(b1);
+        cart.add(b2);
+        cart.remove(b1);
+        cart.remove(b2);
+        assertEquals(00.0, cart.getTotal());
+    }
+    
 }

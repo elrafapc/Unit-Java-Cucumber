@@ -16,7 +16,17 @@ public class ShoppingCart {
         items.add(b);
         total += b.price;
     }
-    
+
+    public void remove(Book b){
+        items.remove(b);
+        total -= b.price;
+    }
+
+    public void clear(Book b){
+        items.clear();
+        total = 0.00;
+    }
+
     public double getTotal(){
         return total;
     }
