@@ -16,7 +16,7 @@ public class ShoppingCart {
         items.add(b);
         total += b.price;
     }
-
+    
     public double getTotal(){
         return total;
     }
