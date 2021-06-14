@@ -1,11 +1,11 @@
 package com.br.TestedAplication.TestedAplication.junit;
 
-import com.br.TestedAplication.TestedAplication.dom.Book;
-import com.br.TestedAplication.TestedAplication.dom.ShoppingCart;
+import com.br.TestedAplication.TestedAplication.model.Book;
+import com.br.TestedAplication.TestedAplication.model.ShoppingCart;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -25,27 +25,36 @@ class ShoppingCartTests {
     }
 
     @Test
-    void testAddGetTotal() {
+    void should_verify_count_items(){
+        cart.add(b1);
+        cart.add(b2);
+        assertEquals(2, cart.countItems());
+    }
+
+    @Test
+    void should_verify_total_value_cart() {
         cart.add(b1);
         cart.add(b2);
         assertEquals(30.0, cart.getTotal());
     }
 
     @Test
-    void testRemoveItem(){
+    void should_verify_items_deletions(){
         cart.add(b1);
         cart.add(b2);
+        int firstCount = cart.countItems();
         cart.remove(b1);
-        assertEquals(20.0, cart.getTotal());
+        Assertions.assertTrue(firstCount > cart.countItems());
     }
 
     @Test
-    void clearCart(){
+    void should_verify_clear_cart(){
         cart.add(b1);
         cart.add(b2);
-        cart.remove(b1);
-        cart.remove(b2);
+        cart.clear();
+
+        assertEquals(0 , cart.countItems());
         assertEquals(00.0, cart.getTotal());
     }
-    
+
 }

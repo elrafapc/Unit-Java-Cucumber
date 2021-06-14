@@ -1,7 +1,6 @@
-package com.br.TestedAplication.TestedAplication.dom;
+package com.br.TestedAplication.TestedAplication.model;
 
 public class Book {
-    //titulo, preco, codLivro
     public String title;
     public double price;
     public String codeBook;
